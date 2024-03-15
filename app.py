@@ -28,6 +28,10 @@ def chat():
     # 获取AI的回复
     ai_response = response.choices[0].message.content
 
+    # 删除所有'\n'字符
+    ai_response = ai_response.replace('\n', '')
+
+    # 返回JSON格式的AI响应
     return jsonify(ai_response)
 
 # 启动Flask实例
