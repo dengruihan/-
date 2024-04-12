@@ -169,9 +169,9 @@ def on_open(ws):
 if __name__ == "__main__":
     # 测试时候在此处正确填写相关信息即可运行
     time1 = datetime.now()
-    wsParam = Ws_Param(APPID='xxxxx', APISecret='xxxxx',
-                       APIKey='xxxxx',
-                       AudioFile=r'xxxxx')
+    wsParam = Ws_Param(APPID='27291a1f', APISecret='MDJjY2YzZTc0YWY2YjEwN2Q2YjNhM2Q3',
+                       APIKey='f0bf2799f78f27c94110d54e1835a8e1',
+                       AudioFile=r'E:/ygchat/语音助手/audio/recording.wav')
     websocket.enableTrace(False)
     wsUrl = wsParam.create_url()
     ws = websocket.WebSocketApp(wsUrl, on_message=on_message, on_error=on_error, on_close=on_close)
